@@ -25,13 +25,16 @@
 }
 .nav-menu {
     width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu > a {
     color: #e1d8e4;
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 28px;
-    display: flex;
-    justify-content: space-around;
-
+    text-decoration: none;
+    cursor: pointer;
 }
 .logo-bar {
     max-height: 950px;
@@ -145,8 +148,6 @@
     height: 90%;
     background-color: gray;
 }
-
-
 .center {
     display: flex;
     align-items: center;
@@ -154,6 +155,6 @@
 }
 .bg-gradient {
     background-color: rgb(127, 64, 135);
-    background-image: linear-gradient(90deg, rgb(127, 64, 135), rgb(71,35,76));
+    background-image: linear-gradient(90deg, #884391, #442249);
     color: #ffffff;
 }

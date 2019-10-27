@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Maven+Pro:400,500,700,900|Open+Sans:400,700,800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
     <link rel="stylesheet" href="src/styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
     <title>Billog Studio</title>
   </head>
@@ -16,10 +18,10 @@
                 <img src="assets/img/logo.png">
             </div>
             <div class="nav-menu">
-                <div class="offer">Oferta</div>
-                <div class="about-us">O nas</div>
-                <div class="team">Zespół</div>
-                <div class="contact"><img src="assets/img/Icons.png"></div>
+                <a href="#offer">Oferta</a>
+                <a href="#about-us">O nas</a>
+                <a href="#team">Zespół</a>
+                <a href="#contact"><img src="assets/img/Icons.png"></a>
             </div>
         </div>
         <div class="logo-bar center">
@@ -29,7 +31,7 @@
                 <div class="center">Studio gier i aplikacji mobilnych</div>
             </div>
         </div>
-        <div class="info-container center">
+        <div class="info-container center" id="offer">
             <div class="info-img center">
                 <img src="./assets/img/offer.png">
             </div>
@@ -46,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="info-container center bg-gradient">
+        <div class="info-container center bg-gradient" id="about-us">
             <div class="info-desc center">
                 <h2>Billog</h2>
                 <div>
@@ -60,7 +62,7 @@
                 <img src="./assets/img/billog-logo.png">
             </div>
         </div>
-        <div class="info-container center">
+        <div class="info-container center" id="team">
             <div class="info-img center">
                 <img src="./assets/img/team.png">
             </div>
@@ -74,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-container center bg-gradient">
+        <div class="contact-container center bg-gradient" id="contact">
             <div class="contact-info center">
                 <h2>Kontakt</h2>
                 <div>
@@ -90,5 +92,6 @@
             </div>
         </div>
     </div>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
