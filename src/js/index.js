@@ -1,6 +1,6 @@
 function scroll(e) {
 
-    var href = $(this).attr('href');
+    const href = $(this).attr('href');
 
     e.preventDefault();
 
