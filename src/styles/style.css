@@ -26,8 +26,13 @@ body {
 
 .nav-logo {
     width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
-
+.nav-logo > img {
+    height: 90%;
+}
 .nav-menu {
     width: 30%;
     display: flex;
@@ -64,19 +69,14 @@ body {
     color: #040820;
     position: relative;
     padding: 100px 130px;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    /* -webkit-filter: drop-shadow(8px 8px 10px gray); 
-    filter: drop-shadow(8px 8px 10px gray); */
-    /* -webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
-    box-shadow: 0px 0px 8px -2px rgba(0,0,0,1); */
 }
 
 .logo-container>h1 {
     font-family: 'Maven Pro';
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.07em;
     font-size: 130px;
+    opacity: 0.9;
 }
 
 .logo-container>div {
@@ -121,17 +121,17 @@ body {
 
 .offer-container>h2::after,
 .offer-container>h2::before {
-    margin: 0 50px;
+    margin: 0 40px;
     content: '';
-    width: 150px;
-    height: 1px;
+    width: 130px;
+    height: 2px;
     background-color: #040820;
 }
 
 .offer-parts {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -156,6 +156,9 @@ body {
     -webkit-box-shadow: 0px 0px 15px -6px rgba(112, 112, 112, 1);
     -moz-box-shadow: 0px 0px 15px -6px rgba(112, 112, 112, 1);
     box-shadow: 0px 0px 15px -6px rgba(112, 112, 112, 1);
+}
+.offer-info>div>img {
+    height: 70%;
 }
 .v-container,
 .info-container {
@@ -202,7 +205,15 @@ body {
 .v-img {
     width: 50%;
 }
-
+.logo-img {
+    width: 60%;
+}
+.team-img {
+    width: 100%;
+}
+.proud-img {
+    width: 45%;
+}
 .info-desc {
     width: 50%;
     font-family: 'Open Sans';
@@ -230,7 +241,7 @@ body {
 
 .info-desc>div {
     font-size: 22px;
-    width: 70%;
+    width: 65%;
     padding: 20px 0 0 40px;
 }
 
@@ -295,4 +306,81 @@ body {
     background-color: #844994;
     background-image: linear-gradient(90deg, #844994, #572367);
     color: #e1d8e4;
+}
+
+@media screen and (max-width: 1440px) {
+    .nav-logo,
+    .nav-menu {
+      width: 35%;
+    }
+    .navigation-bar {
+        height: 70px;
+    }
+    .nav-menu > a {
+        font-size: 20px;
+    }
+    .logo-container > h1 {
+        font-size: 100px;
+        letter-spacing: 0.03em;
+    }
+    .logo-container > div {
+        font-size: 26px;
+    }
+    .logo-container {
+        padding: 70px 80px;
+    }
+    .logo-bar {
+        height: 700px;
+    }
+    .container-copyright {
+        height: 26px;
+    }
+    .container-copyright > p {
+        font-size: 14px;
+    }
+    .offer-container {
+        padding: 60px 0 50px 0;
+    }
+    .offer-container>h2,
+    .v-header>h2,
+    .info-desc>h2,
+    .contact-header > h3 {
+        font-size: 64px;
+    }
+    .offer-parts {
+        width: 84%;
+    }
+    .offer-info>p {
+        font-size: 18px;
+        padding-bottom: 70px;
+    }
+    .offer-info>div {
+        width: 220px;
+        height: 220px;
+    }
+    .v-header>div,
+    .info-desc>div,
+    .contact-header > div {
+        font-size: 18px;
+    }
+    .v-header>h2 {
+        width: 85%;
+    }
+    .v-header>div,
+    .info-desc>div {
+        width: 75%;
+    }
+    .v-header>h2::after {
+        width: 230px;
+    }
+    .w-bottom {
+        height: 119px;
+    }
+    .wave-bottom,
+    .wave {
+        height: 120px;
+    }
+    .v-container, .info-container {
+        padding-bottom: 80px;
+    }
 }
