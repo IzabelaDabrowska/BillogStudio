@@ -384,3 +384,82 @@ body {
         padding-bottom: 80px;
     }
 }
+@media screen and (max-width: 1024px) {
+    .nav-menu {
+        width: 40%;
+    }
+    .nav-menu > div > a > img {
+        width: 35px;
+    }
+    .nav-logo > img {
+        height: 80%;
+    }
+    .logo-container > h1 {
+        font-size: 80px;
+    }
+    .logo-container > div {
+        font-size: 24px;
+    }
+    .logo-container {
+        border: 2px solid #707070;
+        padding: 40px 30px;
+    }
+    .logo-container>div::before, .logo-container>div::after {
+        margin: 0 20px;
+        height: 1px;
+    }
+    .logo-bar {
+        height: 600px;
+    }
+    .container-copyright {
+        height: 22px;
+    }
+    .container-copyright > p {
+        font-size: 12px;
+    }
+    .offer-container {
+        padding: 20px 0 50px 0;
+    }
+    .offer-container>h2,
+    .v-header>h2,
+    .info-desc>h2,
+    .contact-header > h3 {
+        font-size: 56px;
+    }
+    .info-desc>h2 {
+        width: 100%;
+    }
+    .info-desc>div {
+        padding: 20px 0 0 0;
+        width: 80%;
+    }
+    .offer-parts {
+        width: 88%;
+    }
+    .offer-info>p {
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+    .offer-info>div {
+        width: 160px;
+        height: 160px;
+    }
+    .v-header>div,
+    .info-desc>div,
+    .contact-header > div {
+        font-size: 16px;
+    }
+    .v-header>h2 {
+        width: 90%;
+    }
+    .v-header>h2::after {
+        width: 140px;
+    }
+    .w-bottom {
+        height: 89px;
+    }
+    .wave-bottom,
+    .wave {
+        height: 90px;
+    }
+}
