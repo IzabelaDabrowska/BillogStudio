@@ -1,15 +1,23 @@
-function scroll(e) {
+window.onload = function () {
+    const hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('is-active');
+    });
 
-    const href = $(this).attr('href');
+    function scroll(e) {
 
-    e.preventDefault();
+        const href = $(this).attr('href');
 
-    $('html, body').animate({
-        scrollTop: $(href).offset().top
-    }, 800);
+        e.preventDefault();
 
-    location.hash = href;
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 800);
 
-};
+        location.hash = href;
 
-$('a[href^="#"]').click(scroll);
+    };
+
+    $('a[href^="#"]').click(scroll);
+
+}

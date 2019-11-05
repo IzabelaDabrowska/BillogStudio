@@ -308,6 +308,38 @@ body {
     color: #e1d8e4;
 }
 
+.hamburger {
+    display: none;
+}
+.hamburger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+#hamburger.is-active .line:nth-child(2){
+    opacity: 0;
+}
+#hamburger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(10px) rotate(45deg);
+    -ms-transform: translateY(10px) rotate(45deg);
+    -o-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+}
+#hamburger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+
 @media screen and (max-width: 1440px) {
     .nav-logo,
     .nav-menu {
@@ -461,5 +493,75 @@ body {
     .wave-bottom,
     .wave {
         height: 90px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navigation-bar {
+        height: 65px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-logo, .nav-menu {
+        width: 60%;
+    }
+    .logo-container > h1 {
+        font-size: 70px;
+    }
+    .logo-container > div {
+        font-size: 20px;
+    }
+    .logo-container {
+        border: 2px solid #707070;
+        padding: 30px 10px;
+    }
+    .logo-container>div::before, .logo-container>div::after {
+        margin: 0 20px;
+        width: 60px;
+        height: 1px;
+    }
+    .logo-bar {
+        height: 550px;
+    }
+    .offer-container>h2,
+    .v-header>h2,
+    .info-desc>h2,
+    .contact-header > h3 {
+        font-size: 50px;
+    }
+    .offer-info>p {
+        font-size: 14px;
+    }
+    .offer-info>div {
+        width: 130px;
+        height: 130px;
+    }
+    .v-header>div,
+    .info-desc>div,
+    .contact-header > div {
+        font-size: 14px;
+    }
+    .v-header>h2::after {
+        margin: 0 20px;
+        width: 100px;
+    }
+    .logo-img {
+        width: 90%;
+    }
+    .w-bottom {
+        height: 59px;
+    }
+    .wave-bottom,
+    .wave {
+        height: 60px;
+    }
+    .info-desc>h2::after {
+        margin: 0 40px;
+    }
+    .proud-img {
+        width: 60%;
     }
 }
