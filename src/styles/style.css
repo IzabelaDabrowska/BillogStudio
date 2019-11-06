@@ -48,6 +48,21 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+.nav-menu > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e1d8e4;
+    transition: width .3s;
+}
+.nav-menu>a:hover::after {
+    width: 100%;
+}
+.nav-menu>div>a>img:hover {
+    opacity: 0.7;
+    transition: all .3s;
+}
 
 .logo-bar {
     max-height: 950px;
@@ -74,7 +89,6 @@ body {
 .logo-container>h1 {
     font-family: 'Maven Pro';
     font-weight: 900;
-    letter-spacing: 0.07em;
     font-size: 130px;
     opacity: 0.9;
 }
@@ -353,7 +367,6 @@ body {
     }
     .logo-container > h1 {
         font-size: 100px;
-        letter-spacing: 0.03em;
     }
     .logo-container > div {
         font-size: 26px;
@@ -502,6 +515,10 @@ body {
     .nav-menu {
         display: none;
     }
+    .nav-menu > a::after, 
+    .nav-menu>a:hover::after {
+        display: none;
+    }
     .hamburger {
         display: block;
     }
@@ -515,7 +532,6 @@ body {
         font-size: 20px;
     }
     .logo-container {
-        border: 2px solid #707070;
         padding: 30px 10px;
     }
     .logo-container>div::before, .logo-container>div::after {
@@ -563,5 +579,82 @@ body {
     }
     .proud-img {
         width: 60%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .navigation-bar {
+        height: 55px;
+    }
+    .offer-container>h2::after, .offer-container>h2::before {
+        margin: 0 20px;
+        width: 80px;
+        height: 1px;
+    }
+    .logo-container > h1 {
+        font-size: 55px;
+    }
+    .logo-container > div {
+        font-size: 16px;
+    }
+    .logo-container>div::before, .logo-container>div::after {
+        margin: 0 0;
+        width: 80px;
+    }
+    .offer-parts {
+        flex-direction: column;
+        width: 100%;
+    }
+    .offer-info {
+        width: 90%;
+        text-align: center;
+    }
+    .offer-info:nth-child(1),
+    .offer-info:nth-child(2) {
+        padding-bottom: 40px;
+    }
+    .offer-info > p {
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+    .w-bottom {
+        height: 39px;
+    }
+    .wave-bottom,
+    .wave {
+        height: 40px;
+    } 
+    .v-container {
+        flex-direction: column;
+    }
+    .v-header {
+        width: 90%;
+        align-items: center;
+    }
+    .v-header>div, .info-desc>div {
+        width: 80%;
+    }
+    .v-header>div {
+        padding: 20px 0 20px 0;
+    }
+    .v-img {
+        width: 100%;
+    }
+    .logo-img {
+        width: 70%;
+    }
+    .v-container, .info-container {
+        padding-bottom: 40px;
+    }
+    .info-container {
+        flex-direction: column-reverse;
+    }
+    .info-desc {
+        width: 90%;
+    }
+    .v-header>h2::after {
+        width: 90px;
+    }
+    .proud-img {
+        padding-top: 40px;
     }
 }
