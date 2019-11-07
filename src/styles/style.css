@@ -903,11 +903,7 @@ body {
 
     .v-header>div,
     .info-desc>div {
-        width: 80%;
-    }
-
-    .v-header>div {
-        padding: 20px 0 0 0;
+        width: 90%;
     }
 
     .v-img {
@@ -945,5 +941,37 @@ body {
     .proud-img-mobile {
         display: block;
         width: 50%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .offer-container>h2::after,
+    .offer-container>h2::before {
+        width: 50px;
+    }
+
+    .logo-container>h1 {
+        font-size: 80px;
+    }
+
+    .logo-container>div {
+        font-size: 26px;
+    }
+
+    .w-bottom {
+        height: 29px;
+    }
+
+    .wave-bottom,
+    .wave {
+        height: 30px;
+    }
+
+    .v-header {
+        width: 100%;
+    }
+
+    .v-container,
+    .info-container {
+        padding-bottom: 15px;
     }
 }
