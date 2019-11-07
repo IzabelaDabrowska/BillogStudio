@@ -719,7 +719,7 @@ body {
     .nav-active {
         display: block;
         position: absolute;
-        top: 65px;
+        top: 100%;
         right: 0;
         background-color: rgb(52, 30, 58);
         display: flex;
@@ -771,6 +771,10 @@ body {
 
     .logo-bar {
         height: 550px;
+    }
+    .logo-bar>img {
+        filter: brightness(0.7) blur(8px);
+        -webkit-filter: brightness(0.7) blur(8px);
     }
 
     .offer-container>h2,
@@ -835,17 +839,20 @@ body {
     }
 
     .logo-container>h1 {
-        font-size: 55px;
+        font-size: 85px;
+        font-family: 'Open Sans';
+        font-weight: 100;
     }
-
+    .logo-container {
+        border: none;
+    }
     .logo-container>div {
-        font-size: 16px;
+        font-size: 28px;
     }
 
     .logo-container>div::before,
     .logo-container>div::after {
-        margin: 0 0;
-        width: 80px;
+        display: none;
     }
 
     .offer-parts {
