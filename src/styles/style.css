@@ -220,7 +220,7 @@ body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .offer-info {
@@ -391,7 +391,6 @@ body {
     height: 150px;
     -webkit-clip-path: url(#wave);
     clip-path: url(#wave);
-    margin: -1px;
 }
 
 .wave-bottom {
@@ -864,6 +863,7 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
@@ -987,7 +987,7 @@ body {
 @media screen and (max-width: 320px) {
     .offer-container>h2::after,
     .offer-container>h2::before {
-        width: 30px;
+        width: 20px;
     }
     .offer-container>h2, .v-header>h2, .info-desc>h2, .contact-header>h3 {
         font-size: 45px;
