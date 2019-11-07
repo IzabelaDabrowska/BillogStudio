@@ -5,6 +5,10 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+#team {
+    margin-top: -80px; 
+    padding-top: 80px; 
+}
 
 .container {
     padding: 0;
@@ -297,7 +301,7 @@ body {
 }
 
 .v-header>h2::after {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 50px;
     content: '';
     width: 300px;
     height: 1px;
@@ -444,7 +448,6 @@ body {
     font-size: 18px;
     color: #969696;
 }
-
 .center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -717,6 +720,7 @@ body {
     }
 
     .nav-active {
+        width: 50%;
         display: block;
         position: absolute;
         top: 100%;
@@ -728,12 +732,12 @@ body {
 
     .nav-active>a {
         width: 100%;
-        border-bottom: 1px solid #ecf0f1;
-    }
-
-    .nav-active>a {
         text-align: center;
         padding: 10px;
+    }
+
+    .nav-button:not(:nth-child(4)) {
+        border-bottom: 1px solid #ecf0f1;
     }
 
     .nav-menu>a::after,
@@ -771,10 +775,6 @@ body {
 
     .logo-bar {
         height: 550px;
-    }
-    .logo-bar>img {
-        filter: brightness(0.7) blur(8px);
-        -webkit-filter: brightness(0.7) blur(8px);
     }
 
     .offer-container>h2,
@@ -845,6 +845,10 @@ body {
     }
     .logo-container {
         border: none;
+    }
+    .logo-bar>img {
+        filter: brightness(0.7) blur(8px);
+        -webkit-filter: brightness(0.7) blur(8px);
     }
     .logo-container>div {
         font-size: 28px;
@@ -929,7 +933,9 @@ body {
     .info-desc {
         width: 90%;
     }
-
+    .v-header>h2 {
+        width: 100%;
+    }
     .v-header>h2::after {
         width: 90px;
     }
@@ -944,6 +950,9 @@ body {
     }
 }
 @media screen and (max-width: 375px) {
+    .v-header>h2 {
+        width: 90%;
+    }
     .offer-container>h2::after,
     .offer-container>h2::before {
         width: 50px;
@@ -973,5 +982,20 @@ body {
     .v-container,
     .info-container {
         padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .offer-container>h2::after,
+    .offer-container>h2::before {
+        width: 30px;
+    }
+    .offer-container>h2, .v-header>h2, .info-desc>h2, .contact-header>h3 {
+        font-size: 45px;
+    }
+    .info-desc>h2::after {
+        margin: 0 20px;
+    }
+    .container-copyright>p {
+        font-size: 10px;
     }
 }
