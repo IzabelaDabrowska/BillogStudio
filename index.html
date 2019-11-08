@@ -58,21 +58,24 @@
             <h2>Oferta</h2>
             <div class="offer-parts">
                 <div class="offer-info">
-                    <p>Tworzenie rozbudowanych fabularnie gier na platformy PC, PlayStation i Xbox (również w wersji VR). Jesteśmy w stałym kontakcie z dużymi i rozpoznawalnymi firmami ze środowiska gamedevu.
-                        </p>
+                    <p>Tworzenie rozbudowanych fabularnie gier na platformy PC, PlayStation i Xbox (również w wersji
+                        VR). Jesteśmy w stałym kontakcie z dużymi i rozpoznawalnymi firmami ze środowiska gamedevu.
+                    </p>
                     <div class="center">
-                        <img class="controller-img" src="./assets/img/controller-icon.png"> 
+                        <img class="controller-img" src="./assets/img/controller-icon.png">
                     </div>
                 </div>
                 <div class="offer-info">
-                    <p>Projektowanie i wdrażanie spersonalizowanych rozwiązań webowych. W tworzonych przez nas stronach stawiamy na przejrzystość oraz nowoczesny design.
+                    <p>Projektowanie i wdrażanie spersonalizowanych rozwiązań webowych. W tworzonych przez nas stronach
+                        stawiamy na przejrzystość oraz nowoczesny design.
                     </p>
                     <div class="center">
                         <img class="offer-img" src="./assets/img/web.png">
                     </div>
                 </div>
                 <div class="offer-info">
-                    <p>Produkcja aplikacji mobilnych oraz progresywnych. Starannie dbamy o to, aby nasze produkty cechowała niezawodność oraz intuicyjna obsługa.
+                    <p>Produkcja aplikacji mobilnych oraz progresywnych. Starannie dbamy o to, aby nasze produkty
+                        cechowała niezawodność oraz intuicyjna obsługa.
                     </p>
                     <div class="center">
                         <img class="offer-img" src="./assets/img/phone.png">
@@ -91,10 +94,14 @@
             <div class="v-header">
                 <h2>Billog</h2>
                 <div>
-                    Na rynku gier i aplikacji mobilnych działamy od 2019 roku. Jesteśmy niezależną firmą skupiającą się na tym, aby projekty były jak najbardziej innowacyjne pod względem rozwiązań technologicznych i koncepcyjnych.
+                    Na rynku gier i aplikacji mobilnych działamy od 2019 roku. Jesteśmy niezależną firmą skupiającą się
+                    na tym, aby projekty były jak najbardziej innowacyjne pod względem rozwiązań technologicznych i
+                    koncepcyjnych.
                     <br>
                     <br>
-                    Naszym głównym celem i zarazem największymi planami na rozwój jest pełne wejście w gamedev. Skupiamy szczególną uwagę na tworzeniu gier, które swoim charakterem i kreatywnym podejściem do rozgrywki stworzą własny niepowtarzalny sposób narracji. Zapewniając graczowi pełną immersję w świat gry.
+                    Naszym głównym celem i zarazem największymi planami na rozwój jest pełne wejście w gamedev. Skupiamy
+                    szczególną uwagę na tworzeniu gier, które swoim charakterem i kreatywnym podejściem do rozgrywki
+                    stworzą własny niepowtarzalny sposób narracji. Zapewniając graczowi pełną immersję w świat gry.
                 </div>
             </div>
             <div class="v-img center">
@@ -117,10 +124,14 @@
             <div class="info-desc">
                 <h2>Zespół</h2>
                 <div>
-                    Jesteśmy młodym, zgranym zespołem. W pracy profesjonalni partnerzy, a prywatnie grupa dobrych przyjaciół. Mimo wieku nasz zespół to grono doświadczonych w swoich dziedzinach ludzi, którzy chcą cały czas się rozwijać, a ponadto szukają nowych, coraz bardziej rozbudowanych projektów.
+                    Jesteśmy młodym, zgranym zespołem. W pracy profesjonalni partnerzy, a prywatnie grupa dobrych
+                    przyjaciół. Mimo wieku nasz zespół to grono doświadczonych w swoich dziedzinach ludzi, którzy chcą
+                    cały czas się rozwijać, a ponadto szukają nowych, coraz bardziej rozbudowanych projektów.
                     <br>
                     <br>
-                    W składzie: trzech programistów, Game Designera/Narrative Designera, grafików 2D/3D, UI/UX Designera, Frontend Developera, Sound Designera. Dodatkowo outsourcingowo współpracujemy z innymi artystami.
+                    W składzie: trzech programistów, Game Designera/Narrative Designera, grafików 2D/3D, UI/UX
+                    Designera, Frontend Developera, Sound Designera. Dodatkowo outsourcingowo współpracujemy z innymi
+                    artystami.
                 </div>
             </div>
         </div>
@@ -172,10 +183,33 @@
             </div>
         </div>
         <div class="container-copyright center">
-                <p>Copyright created by Billog Studio. Wszelkie prawa zastrzeżone</p>
-            </div>
+            <p>Copyright created by Billog Studio. Wszelkie prawa zastrzeżone</p>
+        </div>
     </div>
     <script src="./src/js/index.js"></script>
+
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v5.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="fb-customerchat" attribution=setup_tool page_id="1968744700023254" theme_color="#884391"
+        logged_in_greeting="Cześć! W czym możemy pomóc? :)" logged_out_greeting="Cześć! W czym możemy pomóc? :)">
+    </div>
 </body>
 
 </html>

@@ -7,7 +7,6 @@ window.onload = function () {
         hamburger.classList.toggle('is-active');
         navigation.classList.toggle('nav-active');
     });
-    console.log(navBtn);
 
     navBtn.forEach(item => {
         item.addEventListener('click', event => {
