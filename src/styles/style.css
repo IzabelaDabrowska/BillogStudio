@@ -421,6 +421,9 @@ body {
 }
 
 .contact-header>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 22px;
     opacity: 0.7;
 }
@@ -429,6 +432,51 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: #000000;
+}
+.footer-icons {
+    width: 200px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-icons > a {
+    width: 44px;
+    height: 44px;
+    padding: 2px;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #844994;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.footer-icons > a > img {
+    width: 100%;
+}
+.footer-img-hover {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.footer-icons> a:hover {
+    background-color: #844994;
+}
+.footer-icons> a:hover>img:first-child {
+    display: none;
+}
+.footer-icons>a:hover .footer-img-hover {
+    display: inline-block;
+}
+.twitter {
+    padding: 3px;
 }
 
 .container-copyright {
