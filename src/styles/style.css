@@ -48,7 +48,7 @@ body {
 }
 
 .nav-logo>img {
-    height: 90%;
+    height: 80%;
 }
 
 .nav-menu {
@@ -67,7 +67,7 @@ body {
     color: #e1d8e4;
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 28px;
+    font-size: 26px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -122,8 +122,8 @@ body {
 .logo-bar>img {
     position: absolute;
     padding-bottom: 900px;
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
+    -webkit-filter: blur(8px) brightness(90%);
+    filter: blur(8px) brightness(90%);
 }
 
 .logo-container {
@@ -132,6 +132,7 @@ body {
     color: #040820;
     position: relative;
     padding: 100px 130px;
+    -webkit-filter: brightness(100%);
 }
 
 .logo-container>h1 {
@@ -463,6 +464,7 @@ body {
     background-image: -o-linear-gradient(left, #844994, #572367);
     background-image: linear-gradient(90deg, #844994, #572367);
     color: #e1d8e4;
+    margin-top: -1px;
 }
 
 .hamburger {
@@ -560,8 +562,8 @@ body {
     }
 
     .offer-info>div {
-        width: 220px;
-        height: 220px;
+        width: 190px;
+        height: 190px;
     }
 
     .v-header>div,
@@ -704,6 +706,8 @@ body {
 @media screen and (max-width: 768px) {
     .navigation-bar {
         height: 65px;
+        background-color: #64326b;
+        background-image: none;
     }
 
     .nav-menu,
@@ -713,28 +717,37 @@ body {
 
     .nav-menu>a[href="#contact"] {
         display: block;
-        text-align: center;
+        text-align: left;
     }
 
     .nav-active {
-        width: 50%;
+        width: 30%;
         display: block;
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: rgb(52, 30, 58);
+        background-color: #64326b;
         display: flex;
         flex-direction: column;
     }
 
     .nav-active>a {
         width: 100%;
-        text-align: center;
-        padding: 10px;
+        text-align: left;
+        padding: 10px 20px;
     }
 
-    .nav-button:not(:nth-child(4)) {
-        border-bottom: 1px solid #ecf0f1;
+    .nav-button {
+        border-bottom: 1px solid #3b1d3f;
+        -webkit-box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
+        box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
+    }
+    .nav-button:first-child {
+        border-top: 1px solid #3b1d3f;
+        -webkit-box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
+        box-shadow: 0px 1px 2px 0px rgba(59,29,63,0.75);
     }
 
     .nav-menu>a::after,
@@ -827,6 +840,16 @@ body {
     .navigation-bar {
         height: 55px;
     }
+    .nav-active {
+        width: 35%;
+    }
+    .nav-menu>a {
+        font-size: 18px;
+    }
+    .hamburger .line {
+        width: 24px;
+        margin: 6px auto;
+    }
 
     .offer-container>h2::after,
     .offer-container>h2::before {
@@ -838,7 +861,7 @@ body {
     .logo-container>h1 {
         font-size: 85px;
         font-family: 'Open Sans';
-        font-weight: 100;
+        font-weight: 600;
     }
     .logo-container {
         border: none;
@@ -953,6 +976,12 @@ body {
     .v-header>h2 {
         width: 90%;
     }
+    .nav-active {
+        width: 40%;
+    }
+    .nav-active>a {
+        padding: 8px 10px;
+    }
     .offer-container>h2::after,
     .offer-container>h2::before {
         width: 50px;
@@ -960,6 +989,7 @@ body {
 
     .logo-container>h1 {
         font-size: 80px;
+        line-height: 95px;
     }
 
     .logo-container>div {
@@ -985,6 +1015,12 @@ body {
     }
 }
 @media screen and (max-width: 320px) {
+    .logo-container>div {
+        padding: 20px 0;
+    }
+    .nav-active {
+        width: 45%;
+    }
     .offer-container>h2::after,
     .offer-container>h2::before {
         width: 20px;
